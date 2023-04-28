@@ -49,6 +49,6 @@ import SlidePage from '@/Components/own/SlidePage.vue';
 
 .container {
     background-color: #384E77;
-    min-width: 100vw;
+    min-width: 100%;
 }
 </style>
