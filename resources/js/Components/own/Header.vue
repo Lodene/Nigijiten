@@ -10,42 +10,43 @@ import { Link } from '@inertiajs/vue3';
                 <lord-icon
                     src="https://cdn.lordicon.com/msoeawqm.json"
                     trigger="hover"
-                    colors="primary:#121331,secondary:#08a88a"
+                    colors="primary:white,secondary:white"
                     id="iconSearch"
-                    target=".containerInput">
+                    target=".containerInput"
+                    stroke="100">
                 </lord-icon>
-
                 <input type="text">
             </form>
         </div>
         <div class="droite">
-            <Link href='/Manga' class="link">
+            <Link href='/Manga' class="link manga">
                 <lord-icon
                     src="https://cdn.lordicon.com/wxnxiano.json"
                     trigger="morph"
-                    colors="primary:#08a88a,secondary:#121331"
-                    id="iconManga"
-                    target="#linkManga">
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    stroke="100"
+                    target=".manga">
                 </lord-icon>
                 <h2>Manga</h2>
             </Link>
-            <Link href='/Animes' class="link">
+            <Link href='/Animes' class="link anime">
                 <lord-icon
-                    src="https://cdn.lordicon.com/wxnxiano.json"
-                    trigger="morph"
-                    colors="primary:#08a88a,secondary:#121331"
-                    id="iconManga"
-                    target="#linkManga">
+                    src="https://cdn.lordicon.com/tdxypxgp.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    stroke="100"
+                    target=".anime">
                 </lord-icon>
                 <h2>Animes</h2>
             </Link>
-            <Link href='#' class="link">
+            <Link href='#' class="link auth">
                 <lord-icon
-                    src="https://cdn.lordicon.com/wxnxiano.json"
-                    trigger="morph"
-                    colors="primary:#08a88a,secondary:#121331"
-                    id="iconManga"
-                    target="#linkManga">
+                    src="https://cdn.lordicon.com/dxjqoygy.json"
+                    trigger="hover"
+                    colors="primary:white,secondary:white"
+                    target=".auth"
+                    id="iconAuth"
+                    stroke="100">
                 </lord-icon>
                 <h2>Connexion</h2>
             </Link>
@@ -58,9 +59,9 @@ import { Link } from '@inertiajs/vue3';
     #header {
         display: flex;
         justify-content: space-between;
-        background-color: rgba(42, 45, 67, 0.95);
+        background-color: rgba(13, 6, 48, 1);
 ;
-        padding: 5px;
+        padding: 10px;
     }
 
     .gauche, .droite {
@@ -74,24 +75,33 @@ import { Link } from '@inertiajs/vue3';
 
     .droite {
         justify-content: space-around;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
     }
 
     .containerInput {
         display: flex;        
         align-items: center;
-        border: 1px solid black;
+        border: 2px solid black;
         margin-right: 25px;
-        border-radius: 5px;
+        border-radius: 10px;
+        background-color: #18314F;
     }
 
     .containerInput > input {
         border: none;
         width: 25vw;
-        background-color: rgba(42, 45, 67, 0.1);
+        border-radius: 10px;
+        background-color: #18314F;
+    }
+
+    input:focus {
+        outline: none;
     }
 
     #iconSearch {
-        color: white;
+        padding-left: 10px;
     }
 
     #logo {
@@ -103,6 +113,13 @@ import { Link } from '@inertiajs/vue3';
         padding: 5px 10px 5px 5px;
         border-radius: 10px;
         align-items: center;
-        border: 2Px solid black;
+    }
+
+    .link > h2{
+        padding-left: 8px;
+    }
+
+    .link.auth {
+        background-color: red;
     }
 </style>
