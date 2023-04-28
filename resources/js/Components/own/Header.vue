@@ -39,7 +39,7 @@ import { Link } from '@inertiajs/vue3';
                 </lord-icon>
                 <h2>Animes</h2>
             </Link>
-            <Link href='#' class="link auth">
+            <Link href='/login' class="link auth">
                 <lord-icon
                     src="https://cdn.lordicon.com/dxjqoygy.json"
                     trigger="hover"
