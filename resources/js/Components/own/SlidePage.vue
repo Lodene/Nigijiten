@@ -36,12 +36,9 @@
     },
     methods: {
       widthBar() {
-        console.log('salut')
         let bar = this.$el.querySelector('.bar')
         let titre = this.$el.querySelector('.titre')
-        console.log(titre.innerHTML)
         let width = titre.offsetWidth + 90
-        console.log(width)
         bar.style.width = width + 'px'
       }
     }
